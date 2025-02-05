@@ -6,7 +6,7 @@
   <summary>Pico CTF</summary>
   <ul>
     <details>
-        <summary>Binary Exploitation Write Up</summary>
+        <summary>Binary Exploitation Write Upp</summary>
         <ul>
             <li><a href="./projects/pico-ctf/binary-exploitation/format-string2/picoCTF Format-string-2 Write Up.md">Format-string-2 Write Up</a></li>
             <li><a href="./projects/pico-ctf/binary-exploitation/format-string3/picoCTF Format-string-3 Write Up.pdf">Format-string-3 Write Up</a></li>

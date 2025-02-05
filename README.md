@@ -23,7 +23,7 @@
 <details>
         <summary>Forensic Write Up</summary>
         <ul>
-            <li><a href="./projects/pico-ctf/forensic/MobPsycho/test.txt">MobPsycho Write Up</a></li>
+            <li><a href="./projects/pico-ctf/forensic/MobPsycho/picoCTF Mob Psycho Write Up.md">MobPsycho Write Up</a></li>
         </ul>
     </details>
 

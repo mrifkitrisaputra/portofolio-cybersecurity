@@ -16,7 +16,7 @@
 <details>
         <summary>Cryptography Write Up</summary>
         <ul>
-            <li><a href="./projects/pico-ctf/cryptography/rsa_oracle/test.txt">Rsa-oracle Write Up</a></li>
+            <li><a href="./projects/pico-ctf/cryptography/rsa_oracle/picoCTF rsa_oracle Write Up.md">Rsa-oracle Write Up</a></li>
         </ul>
     </details>
 

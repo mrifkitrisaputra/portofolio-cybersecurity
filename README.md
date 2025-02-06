@@ -52,6 +52,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/web-exploitation/No-Sql-Injection/picoCTF No Sql Injection Write Up.md">No Sql Injection Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/web-exploitation/More-SQLi/picoCTF More SQLi Write Up.md">More SQLi Write Up</a></li>
+        </ul>
     </details>
   </ul>
 </details>

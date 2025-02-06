@@ -37,7 +37,7 @@
 <details>
         <summary>Reverse Engineering Write Up abbadbd</summary>
         <ul>
-            <li><a href="./projects/pico-ctf/reverse-engineering/WinAntiDbg0x300/test.txt">WinAntiDbg0x300 Write Up</a></li>
+            <li><a href="./projects/pico-ctf/reverse-engineering/packer/picoCTF Packer Write Up.md">Packer Write Up</a></li>
         </ul>
     </details>
 

@@ -32,6 +32,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/general-skills/SansAlpha/picoCTF SansAlpha Write Up.pdf">SansAlpha Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/general-skills/ASCII_numbers/picoCTF ASCII Numbers Write Up.md"> ASCII Numbers Write Up</a></li>
+        </ul>
     </details>
 
 <details>

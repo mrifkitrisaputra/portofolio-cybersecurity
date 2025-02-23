@@ -38,6 +38,12 @@
         <ul>
             <li><a href="./projects/pico-ctf/general-skills/ASCII_numbers/picoCTF ASCII Numbers Write Up.md"> ASCII Numbers Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/general-skills/useless/picoCTF useless Write UP.md"> useless Write Up</a></li>
+        </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md"> Permissions Write Up</a></li>
+        </ul>
     </details>
 
 <details>

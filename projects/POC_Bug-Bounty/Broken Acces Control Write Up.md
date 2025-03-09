@@ -211,7 +211,7 @@
     
     -   User yang ditambahkan muncul di grup victim.
     -   Screenshot: User baru di grup victim.
-    ![f](./documetation/Screenshot%20(437).png) 
+    ![f](./documetation/Screenshot%20(437).png)
 ----------
 
 ## **6. IDOR - Remove User from Group**

@@ -1,4 +1,5 @@
 ﻿# **Broken Access Control Vulnerability Report**
+**Tools Used : Burp Suite, FoxyProxy, Firefox Multi-Account Containers**
 
 ### **Apa itu Broken Access Control (BAC)?**
 

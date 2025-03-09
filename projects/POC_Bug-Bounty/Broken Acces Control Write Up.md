@@ -153,7 +153,8 @@
     <br>
     <br>
     -   Screenshot: Request yang dimodifikasi di Repeater.
-    ![f](./documetation/Screenshot%20(428).png)
+    
+        ![f](./documetation/Screenshot%20(428).png)
 
 4.  **Verifikasi**
     
@@ -161,7 +162,8 @@
     <br>
     <br>
     -   Screenshot: Nama grup victim setelah diubah.
-    ![f](./documetation/Screenshot%20(430).png)
+
+        ![f](./documetation/Screenshot%20(430).png)
 ----------
 
 ## **4. IDOR - Delete Group**

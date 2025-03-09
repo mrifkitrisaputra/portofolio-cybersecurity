@@ -88,3 +88,10 @@
     <li><a href="https://github.com/mrifkitrisaputra/pemrograman-web-2">Cyber Forge source code</a></li>
   </ul>
 </details>
+
+<details>
+<summary>POC Bug Bounty</summary>
+  <ul>
+    <li><a href="./projects/POC_Bug-Bounty/Broken Acces Control Write Up.md">Broken Acces Control</a></li>
+  </ul>
+</details>

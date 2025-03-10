@@ -1,4 +1,4 @@
-﻿# **Broken Access Control Vulnerability Report**
+# **Broken Access Control Vulnerability Report**
 **Tools Used : Burp Suite, FoxyProxy, Firefox Multi-Account Containers**
 
 ### **Apa itu Broken Access Control (BAC)?**
@@ -29,6 +29,9 @@
     
 -   Login ke masing-masing akun di container yang sesuai.
     -   Screenshot: Tampilan 3 container dengan akun terpisah.
+    
+        <br>
+
         ![attacker](./documetation/Screenshot%20(446).png)
         
         <br>
@@ -60,6 +63,7 @@
     <br>
     <br>
     -   Screenshot: Victim mengundang attacker ke grup
+    <br>
     ![f](./documetation/images.png)
     
 2.  **Intercept Request Clear Chat**
@@ -69,12 +73,14 @@
     <br>
     <br>
     -   Screenshot: Request clear chat dari victim di Burp Repeater.
+    <br>
     ![f](./documetation/Screenshot%20(421).png)
     
 3.  **Intercept Request Chat Attacker**
     
     
-    -   Attacker mengirim pesan ke grup victim, 
+    -   Attacker mengirim pesan ke grup victim,
+    <br> 
     ![f](./documetation/Screenshot%20(441).png)
     lalu tangkap request di Burp Suite dan simpan di Repeater dengan nama **"attacker_send_chat"** .
     
@@ -83,12 +89,14 @@
     -   Copy header request **"attacker_send_chat"** dan tempel ke header request **"victim_clear_chat"** .
     -   Kirim request yang telah dimodifikasi.
     -   Screenshot: Request yang telah dimodifikasi di Burp Repeater.
+    <br>
     ![f](./documetation/Screenshot%20(421).png)
 
 5.  **Verifikasi**
     
     -   Reload halaman grup victim: **Chat grup victim terhapus** meskipun attacker tidak memiliki izin.
     -   Screenshot: Chat grup punya victim kosong setelah exploit.
+    <br>
     ![f](./documetation/Screenshot%20(440).png)
 ----------
 <br>
@@ -106,6 +114,7 @@
     -   Victim membuat grup dan menambahkan attacker sebagai anggota (ID attacker: `1`).
     -   Catat **group_id** milik victim dari URL detail group.
     -   Screenshot: Group ID victim di URL.
+    <br>
     ![f](./documetation/image.png)
 
 2.  **Attacker Update Role di Grupnya Sendiri**
@@ -118,12 +127,14 @@
     -   Ubah parameter `group_id` ke **group_id victim** dan `user_id` ke **ID attacker** .
     -   Kirim request yang telah dimodifikasi.
     -   Screenshot: Request dengan group_id dan user_id yang diubah.
+    <br>
     ![f](./documetation/Screenshot%20(425).png)
     
 4.  **Verifikasi**
     
     -   Buka detail grup victim: Attacker sekarang memiliki role **admin** di grup victim.
     -   Screenshot: Attacker sebagai admin di grup victim.
+    <br>
     ![f](./documetation/Screenshot%20(427).png)
 ----------
 
@@ -138,6 +149,7 @@
     
     -   Victim mengubah nama grupnya. Tangkap request di Burp Suite dan simpan body-nya.
     -   Screenshot: Request update grup dari victim.
+    <br>
     ![f](./documetation/Screenshot%20(423).png)
     
 2.  **Attacker Update Grupnya Sendiri**
@@ -149,13 +161,23 @@
     -   Ganti body request attacker dengan body request victim, lalu ubah `group_name` menjadi **"hackbyattacker"** .
     -   Kirim request yang telah dimodifikasi.
     -   Screenshot: Request yang dimodifikasi di Repeater.
+<<<<<<< HEAD
+    <br>
+    ![f](./documetation/Screenshot%20(428).png)
+=======
         ![f](./documetation/Screenshot%20(428).png)
+>>>>>>> 3f3f166754740e9386ec6dcb1744df3d372da2ff
 
 4.  **Verifikasi**
     
     -   Nama grup victim berubah menjadi **"hackbyattacker"** .
     -   Screenshot: Nama grup victim setelah diubah.
+<<<<<<< HEAD
+    <br>
+    ![f](./documetation/Screenshot%20(430).png)
+=======
         ![f](./documetation/Screenshot%20(430).png)
+>>>>>>> 3f3f166754740e9386ec6dcb1744df3d372da2ff
 ----------
 
 ## **4. IDOR - Delete Group**
@@ -174,12 +196,14 @@
     -   Ubah `group_id` ke **group_id victim** .
     -   Kirim request yang telah dimodifikasi.
     -   Screenshot: Request dengan group_id victim.
+    <br>
     ![f](./documetation/Screenshot%20(442).png)
     
 3.  **Verifikasi**
     
     -   Grup victim tidak lagi muncul di daftar grup.
     -   Screenshot: Daftar grup victim yang kosong.
+    <br>
     ![f](./documetation/Screenshot%20(433).png)
 ----------
 
@@ -199,12 +223,14 @@
     -   Ubah `group_id` ke **group_id victim** .
     -   Kirim request yang telah dimodifikasi.
     -   Screenshot: Request dengan group_id victim.
+    <br>
     ![f](./documetation/Screenshot%20(443).png)
     
 3.  **Verifikasi**
     
     -   User yang ditambahkan muncul di grup victim.
     -   Screenshot: User baru di grup victim.
+    <br>
     ![f](./documetation/Screenshot%20(437).png)
 ----------
 
@@ -224,12 +250,14 @@
     -   Ubah `group_id` ke **group_id victim** .
     -   Kirim request yang telah dimodifikasi.
     -   Screenshot: Request dengan group_id victim.
+    <br>
     ![f](./documetation/Screenshot%202025-03-09%20152314.png)
 
 3.  **Verifikasi**
     
     -   User yang ditargetkan hilang dari grup victim.
     -   Screenshot: User tidak ada di grup victim.
+    <br>
     ![f](./documetation/Screenshot%20(445).png) 
 ----------
 
@@ -248,3 +276,4 @@
 3.  Gunakan **UUID** sebagai pengganti ID numerik untuk mencegah IDOR.
 
 ----------
+

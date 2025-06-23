@@ -1,0 +1,26 @@
+{
+    "sourceFile": "projects/pico-ctf/forensic/Red/picoCTF RED Write Up.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750656786191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750656805255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: RED (Easy)\n+##  CTF Name: RED (Easy)\n \n ### Description:\n RED, RED, RED, RED\n \n"
+                },
+                {
+                    "date": 1750656811446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: RED (Easy)\n+##  CTF Name: RED (Easy)\n \n ### Description:\n RED, RED, RED, RED\n \n"
+                }
+            ],
+            "date": 1750656786191,
+            "name": "Commit-0",
+            "content": "##  CTF Name: RED (Easy)\n\n### Description:\nRED, RED, RED, RED\n\n### Hint:\n1. The picture seems pure, but is it though?\n2. Red?Ged?Bed?Aed?\n3. Check whatever Facebook is called now.\n\n### Analysis:\nPNG images can hide data using steganographic techniques. By running `zsteg -a red.png`, we can extract hidden data embedded in the image’s LSB (Least Significant Bit). The output includes a Base64-encoded string. Decoding that string reveals the flag.\n\n### Solution:\n1. ****Download the `red.png`** file from the challenge:**\n\n\t![f](.\n\n2. **Install Zsteg and run ``zsteg -a red.png``**\n\n\t![f]()\n\n\tYou should find a string we need\n\n3. ****Decode the Base64** string using a tool like [CyberChef](https://gchq.github.io/CyberChef/)**\n\n\t![f]()\n\n### Flag:\n**picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}**\n"
+        }
+    ]
+}

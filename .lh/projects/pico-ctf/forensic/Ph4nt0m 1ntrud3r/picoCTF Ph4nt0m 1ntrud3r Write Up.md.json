@@ -1,0 +1,26 @@
+{
+    "sourceFile": "projects/pico-ctf/forensic/Ph4nt0m 1ntrud3r/picoCTF Ph4nt0m 1ntrud3r Write Up.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750659757275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750659764806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: Ph4nt0m 1ntrud3r (Easy)\n+##  CTF Name: Ph4nt0m 1ntrud3r (Easy)\n \n ### Description:\n A digital ghost has breached my defenses, and my sensitive data has been stolen! 😱💻 Your mission is to uncover how this phantom intruder infiltrated my system and retrieve the hidden flag. To solve this challenge, you'll need to analyze the provided PCAP file and track down the attack method. The attacker has cleverly concealed his moves in well timely manner. Dive into the network traffic, apply the right filters and show off your forensic prowess and unmask the digital intruder!\n \n"
+                },
+                {
+                    "date": 1750659770746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: Ph4nt0m 1ntrud3r (Easy)\n+##  CTF Name: Ph4nt0m 1ntrud3r (Easy)\n \n ### Description:\n A digital ghost has breached my defenses, and my sensitive data has been stolen! 😱💻 Your mission is to uncover how this phantom intruder infiltrated my system and retrieve the hidden flag. To solve this challenge, you'll need to analyze the provided PCAP file and track down the attack method. The attacker has cleverly concealed his moves in well timely manner. Dive into the network traffic, apply the right filters and show off your forensic prowess and unmask the digital intruder!\n \n@@ -19,9 +19,9 @@\n 2. **Filter & extract payloads:**\n \n \tUse tshark to extract TCP payloads from TPC packets of desired lengths:\n \n-\t![f](./documentation/Screenshot%202025-06-23%20131244.png)\n+\t![f](./documentation/Screenshot%202025-06-23%20131230.png)\n \t\n 3.  **Sort & decode:**\n \n \t![f]()\n"
+                }
+            ],
+            "date": 1750659757275,
+            "name": "Commit-0",
+            "content": "##  CTF Name: Ph4nt0m 1ntrud3r (Easy)\n\n### Description:\nA digital ghost has breached my defenses, and my sensitive data has been stolen! 😱💻 Your mission is to uncover how this phantom intruder infiltrated my system and retrieve the hidden flag. To solve this challenge, you'll need to analyze the provided PCAP file and track down the attack method. The attacker has cleverly concealed his moves in well timely manner. Dive into the network traffic, apply the right filters and show off your forensic prowess and unmask the digital intruder!\n\n### Hint:\n1. Filter your packets to narrow down your search.\n2. Attacks were done in timely manner.\n3. Time is essential\n\n### Analysis:\nInside the PCAP, several TCP packets carry Base64-encoded data, but they are out of order time-wise. By filtering packets of specific lengths, extracting TCP payloads, sorting by timestamp, decoding Base64, and concatenating the output in correct order, we can reconstruct the full flag.\n\n### Solution:\n1. **Download file PCAP:**\n\t\n\t![f](./documentation/Screenshot%202025-06-23%20131230.png)\n\n2. **Filter & extract payloads:**\n\n\tUse tshark to extract TCP payloads from TPC packets of desired lengths:\n\n\t![f]()\n\t\n3.  **Sort & decode:**\n\n\t![f]()\n\n### Flag:\n**picoCTF{1t_w4snt_th4t_34sy_tbh_4r_959f50d3}**\n"
+        }
+    ]
+}

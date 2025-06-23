@@ -67,6 +67,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/web-exploitation/SOAP/picoCTF SOAP Write Up.md">SOAP Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/web-exploitation/SSSTI-1/picoCTF SSTI 1 Write Up.md">SSTI 1 Write Up</a></li>
+        </ul>
     </details>
   </ul>
 </details>

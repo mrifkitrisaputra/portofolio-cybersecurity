@@ -1,0 +1,26 @@
+{
+    "sourceFile": "projects/pico-ctf/forensic/Disko1/picoCTF DISKO 1 Write Up.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750644921058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750644929277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: DISKO 1 (easy)\n+##  CTF Name: DISKO 1 (easy)\n \n ### Description:\n Can you find the flag in this disk image?\n ### Hint:\n"
+                },
+                {
+                    "date": 1750644938035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: DISKO 1 (easy)\n+##  CTF Name: DISKO 1 (easy)\n \n ### Description:\n Can you find the flag in this disk image?\n ### Hint:\n"
+                }
+            ],
+            "date": 1750644921058,
+            "name": "Commit-0",
+            "content": "##  CTF Name: DISKO 1 (easy)\n\n### Description:\nCan you find the flag in this disk image?\n### Hint:\n1. Maybe Strings could help? If only there was a way to do that?\n\n### Analysis:\nIn this challenge, we are provided with a raw disk image file: `disko-1.dd`.  \nOur goal is to extract a hidden flag from within the image. Let’s walk through a straightforward method to accomplish this using the **`strings`** utility.\n\n### Solution:\n**1. **Extract the disk file****  \nThe given file is compressed with gzip. First, we extract it using:\n![f](./)\n**2. Identify the file type**\nNext, we use the `file` command to determine the image’s format:\n![f]()\nThe output reveals that the image contains a **FAT32 filesystem**, commonly used in USB drives. It appears to be a raw filesystem dump without a partition table.\n**3. Search for the flag**\nWe then use `strings` in combination with `grep` to search for any string containing \"picoCTF\":\n![f]()\n\n### Flag:\n**picoCTF{1t5_ju5t_4_5tr1n9_e3408eef}**\n"
+        }
+    ]
+}

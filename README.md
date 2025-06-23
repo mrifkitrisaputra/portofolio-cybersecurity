@@ -28,6 +28,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/forensic/DearDiary/picoCTF Dear Diary Write Up.md">Dear Diary Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/forensic/Disko1/picoCTF DISKO 1 Write Up.md">Disko 1 Write Up</a></li>
+        </ul>
     </details>
 
 <details>

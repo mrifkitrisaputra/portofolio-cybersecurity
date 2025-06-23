@@ -161,23 +161,15 @@
     -   Ganti body request attacker dengan body request victim, lalu ubah `group_name` menjadi **"hackbyattacker"** .
     -   Kirim request yang telah dimodifikasi.
     -   Screenshot: Request yang dimodifikasi di Repeater.
-<<<<<<< HEAD
     <br>
     ![f](./documetation/Screenshot%20(428).png)
-=======
-        ![f](./documetation/Screenshot%20(428).png)
->>>>>>> 3f3f166754740e9386ec6dcb1744df3d372da2ff
 
 4.  **Verifikasi**
     
     -   Nama grup victim berubah menjadi **"hackbyattacker"** .
     -   Screenshot: Nama grup victim setelah diubah.
-<<<<<<< HEAD
     <br>
     ![f](./documetation/Screenshot%20(430).png)
-=======
-        ![f](./documetation/Screenshot%20(430).png)
->>>>>>> 3f3f166754740e9386ec6dcb1744df3d372da2ff
 ----------
 
 ## **4. IDOR - Delete Group**

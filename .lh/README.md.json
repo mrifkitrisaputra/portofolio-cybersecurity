@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 21,
             "patches": [
                 {
                     "date": 1750645013184,
@@ -68,6 +68,30 @@
                 {
                     "date": 1750650649681,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/web-exploitation/SSSTI-1/picoCTF SSTI 1 Write Up.md\">SSTI 1 Write Up</a></li>\r\n         </ul>\r\n         <ul>\r\n-            <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">n0s4n1ty Write Up</a></li>\r\n+            <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">N0s4n1ty Write Up</a></li>\r\n         </ul>\r\n     </details>\r\n   </ul>\r\n </details>\r\n"
+                },
+                {
+                    "date": 1750653931917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,11 @@\n         </ul>\r\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Permissions Write Up</a></li>\r\n         </ul>\r\n+        <ul>\r\n+            <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Permissions Write Up</a></li>\r\n+        </ul>\r\n     </details>\r\n \r\n <details>\r\n         <summary>Reverse Engineering Write Up</summary>\r\n"
+                },
+                {
+                    "date": 1750653942821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Permissions Write Up</a></li>\r\n         </ul>\r\n         <ul>\r\n-            <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Permissions Write Up</a></li>\r\n+            <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Fantasy CTF Write Up</a></li>\r\n         </ul>\r\n     </details>\r\n \r\n <details>\r\n"
+                },
+                {
+                    "date": 1750653950772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Permissions Write Up</a></li>\r\n         </ul>\r\n         <ul>\r\n-            <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Fantasy CTF Write Up</a></li>\r\n+            <li><a href=\"./projects/pico-ctf/general-skills/\"> Fantasy CTF Write Up</a></li>\r\n         </ul>\r\n     </details>\r\n \r\n <details>\r\n"
+                },
+                {
+                    "date": 1750655287556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md\"> Permissions Write Up</a></li>\r\n         </ul>\r\n         <ul>\r\n-            <li><a href=\"./projects/pico-ctf/general-skills/\"> Fantasy CTF Write Up</a></li>\r\n+            <li><a href=\"./projects/pico-ctf/general-skills/Fantasy-ctf/picoCTF Fantasy CTF Write Up.md\"> Fantasy CTF Write Up</a></li>\r\n         </ul>\r\n     </details>\r\n \r\n <details>\r\n@@ -75,8 +75,11 @@\n         </ul>\r\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">N0s4n1ty Write Up</a></li>\r\n         </ul>\r\n+        <ul>\r\n+            <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">N0s4n1ty Write Up</a></li>\r\n+        </ul>\r\n     </details>\r\n   </ul>\r\n </details>\r\n \r\n"
+                },
+                {
+                    "date": 1750655293636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">N0s4n1ty Write Up</a></li>\r\n         </ul>\r\n         <ul>\r\n-            <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">N0s4n1ty Write Up</a></li>\r\n+            <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">Cookie Monster Secret Recipe Write Up</a></li>\r\n         </ul>\r\n     </details>\r\n   </ul>\r\n </details>\r\n"
+                },
+                {
+                    "date": 1750655300414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n         <ul>\r\n             <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">N0s4n1ty Write Up</a></li>\r\n         </ul>\r\n         <ul>\r\n-            <li><a href=\"./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md\">Cookie Monster Secret Recipe Write Up</a></li>\r\n+            <li><a href=\"./projects/pico-ctf/web-exploitation/Cookie Monster Secret Recipe/\">Cookie Monster Secret Recipe Write Up</a></li>\r\n         </ul>\r\n     </details>\r\n   </ul>\r\n </details>\r\n"
                 }
             ],
             "date": 1750645013184,

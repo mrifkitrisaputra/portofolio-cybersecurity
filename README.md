@@ -47,6 +47,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/general-skills/Permissions/picoCTF Permissions Write Up.md"> Permissions Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/general-skills/Fantasy-ctf/picoCTF Fantasy CTF Write Up.md"> Fantasy CTF Write Up</a></li>
+        </ul>
     </details>
 
 <details>
@@ -72,6 +75,9 @@
         </ul>
         <ul>
             <li><a href="./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md">N0s4n1ty Write Up</a></li>
+        </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/web-exploitation/Cookie Monster Secret Recipe/picoCTF Cookie Monster Secret Recipe Write Up.md">Cookie Monster Secret Recipe Write Up</a></li>
         </ul>
     </details>
   </ul>

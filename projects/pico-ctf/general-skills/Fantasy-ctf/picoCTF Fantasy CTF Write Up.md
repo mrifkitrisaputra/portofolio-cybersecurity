@@ -15,6 +15,7 @@ This challenge serves as an interactive introduction for newcomers to CTFs. Play
 	![f](./documentation/Screenshot%202025-06-23%20113813.png)
 	
 3. **Interact with the simulation:**
+	
 	Once connected, you will be prompted with a series of choices like:
 	
 	![f](./documentation/Screenshot%202025-06-23%20113845.png)
@@ -22,6 +23,7 @@ This challenge serves as an interactive introduction for newcomers to CTFs. Play
 	![f](./documentation/Screenshot%202025-06-23%20114004.png)
 	
 4. **Retrieve the flag:**
+	
 	At the end of the interaction, the terminal will display the flag. Copy and save it.
 	
 	![f](./documentation/Screenshot%202025-06-23%20114042.png)

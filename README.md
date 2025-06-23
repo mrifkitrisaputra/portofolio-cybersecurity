@@ -70,6 +70,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/web-exploitation/SSSTI-1/picoCTF SSTI 1 Write Up.md">SSTI 1 Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/web-exploitation/n0s4n1ty/picoCTF n0s4n1ty 1 Write Up.md">N0s4n1ty Write Up</a></li>
+        </ul>
     </details>
   </ul>
 </details>

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "projects/pico-ctf/general-skills/Fantasy-ctf/picoCTF Fantasy CTF Write Up.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750653723331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750653731101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: Fantasy CTF (Easy)\n+##  CTF Name: Fantasy CTF (Easy)\n \n ### Description:\n Play this short game to get familiar with terminal applications and some of the most important rules in scope for picoCTF.\n \n"
+                },
+                {
+                    "date": 1750653824696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: Fantasy CTF (Easy)\n+##  CTF Name: Fantasy CTF (Easy)\n \n ### Description:\n Play this short game to get familiar with terminal applications and some of the most important rules in scope for picoCTF.\n \n"
+                }
+            ],
+            "date": 1750653723330,
+            "name": "Commit-0",
+            "content": "##  CTF Name: Fantasy CTF (Easy)\n\n### Description:\nPlay this short game to get familiar with terminal applications and some of the most important rules in scope for picoCTF.\n\n### Hint:\nWhen a choice is presented like [a/b/c], choose one, for example: `c` and then press Enter.\n\n### Analysis:\nThis challenge serves as an interactive introduction for newcomers to CTFs. Players are asked to connect to a remote server via netcat and go through a series of text-based prompts. The game presents multiple-choice questions (such as A, B, or C), and users are expected to select the correct options based on context — for example, choosing \"C\" to register a private account. Once the flow is completed correctly, the server will reveal the flag as a reward.\n\n### Solution:\n1. **Connect to the server:**\n\t\n\t![f](./)\n\t\n3. **Interact with the simulation:**\n\tOnce connected, you will be prompted with a series of choices like:\n\t\n\t![f]()\n\n\t![f]()\n\t\n4. **Retrieve the flag:**\n\tAt the end of the interaction, the terminal will display the flag. Copy and save it.\n\t\n\t![f]()\n\n### Flag:\n**picoCTF{m1113n1um_3d1710n_da2cd4b9}**\n"
+        }
+    ]
+}

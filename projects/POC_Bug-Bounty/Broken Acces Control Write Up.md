@@ -1,4 +1,4 @@
-﻿# **Broken Access Control Vulnerability Report**
+# **Broken Access Control Vulnerability Report**
 **Tools Used : Burp Suite, FoxyProxy, Firefox Multi-Account Containers**
 
 ### **Apa itu Broken Access Control (BAC)?**
@@ -82,9 +82,10 @@
     -   Attacker mengirim pesan ke grup victim,
     <br> 
     ![f](./documetation/Screenshot%20(441).png)
+
     lalu tangkap request di Burp Suite dan simpan di Repeater dengan nama **"attacker_send_chat"** .
     
-4.  **Manipulasi Request**
+5.  **Manipulasi Request**
     
     -   Copy header request **"attacker_send_chat"** dan tempel ke header request **"victim_clear_chat"** .
     -   Kirim request yang telah dimodifikasi.
@@ -92,7 +93,7 @@
     <br>
     ![f](./documetation/Screenshot%20(421).png)
 
-5.  **Verifikasi**
+6.  **Verifikasi**
     
     -   Reload halaman grup victim: **Chat grup victim terhapus** meskipun attacker tidak memiliki izin.
     -   Screenshot: Chat grup punya victim kosong setelah exploit.
@@ -163,6 +164,7 @@
     -   Screenshot: Request yang dimodifikasi di Repeater.
     <br>
     ![f](./documetation/Screenshot%20(428).png)
+>>>>>>> a7101d347f306a97b93753238db01a6ba7e21b76
 
 4.  **Verifikasi**
     
@@ -268,3 +270,4 @@
 3.  Gunakan **UUID** sebagai pengganti ID numerik untuk mencegah IDOR.
 
 ----------
+

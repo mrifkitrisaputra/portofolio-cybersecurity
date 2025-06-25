@@ -21,6 +21,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/cryptography/13/picoCTF 13 Write Up.md">13 Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/cryptography/interencdec/picoCTF interencdec Write Up.md">Interencdec Write Up</a></li>
+        </ul>
     </details>
 
 <details>

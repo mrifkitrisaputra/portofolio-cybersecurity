@@ -88,6 +88,12 @@
         <ul>
             <li><a href="./projects/pico-ctf/web-exploitation/Cookie Monster Secret Recipe/picoCTF Cookie Monster Secret Recipe Write Up.md">Cookie Monster Secret Recipe Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/web-exploitation/heap-dump/picoCTF head-dump Write Up.md">Head-dump Write Up</a></li>
+        </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/web-exploitation/WebDecode/picoCTF WebDecode Write Up.md">WebDecode Write Up</a></li>
+        </ul>
     </details>
   </ul>
 </details>

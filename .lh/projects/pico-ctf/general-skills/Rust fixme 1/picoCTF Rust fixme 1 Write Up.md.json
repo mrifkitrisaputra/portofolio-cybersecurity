@@ -1,0 +1,26 @@
+{
+    "sourceFile": "projects/pico-ctf/general-skills/Rust fixme 1/picoCTF Rust fixme 1 Write Up.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750824029242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750824041001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: Rust Fixme 1 (Easy)\n+##  CTF Name: Rust Fixme 1 (Easy)\n \n ### Description:\n Have you heard of Rust? Fix the syntax errors in this Rust file to print the flag!\n \n"
+                },
+                {
+                    "date": 1750824053368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: Rust Fixme 1 (Easy)\n+##  CTF Name: Rust Fixme 1 (Easy)\n \n ### Description:\n Have you heard of Rust? Fix the syntax errors in this Rust file to print the flag!\n \n"
+                }
+            ],
+            "date": 1750824029242,
+            "name": "Commit-0",
+            "content": "##  CTF Name: Rust Fixme 1 (Easy)\n\n### Description:\nHave you heard of Rust? Fix the syntax errors in this Rust file to print the flag!\n\n### Hint:\n1. Cargo is Rust's package manager and will make your life easier. See the getting started page [here](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)\n2. [println!](https://doc.rust-lang.org/std/macro.println.html)\n3. Rust has some pretty great compiler error messages. Read them maybe?\n\n### Analysis:\nTypical Rust syntax issues to address include adding a semicolon (`;`) at the end of statements, replacing `ret;` with `return;`, and using the `{}` placeholder in `println!` to display variables. Once these fixes are applied, the XOR-decryption code runs and reveals the flag\n\n### Solution:\n1. **Ekstrak file challenge:**\n\n\t![f](./documentation/Screenshot%202025-06-25%20102809.png)\n\n2. **Install Rust & Cargo:**\n\n\t``curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh\nsource \"$HOME/.cargo/env\"``\n\n\t![f]()\n\n\t\n3.  **Run the original code (before fixes):**\n\n\t``cp -r fixme1 /tmp/rust_proj``  \n\t``cd /tmp/rust_proj``  \n\t``cargo build``  \n\t``cargo run\t``\n\n\tYou'll see errors like:\n\n\t![f]()\n\n\tThese pinpoint exactly what needs fixing\n\t\t\n4. **Fix source code `src/main.rs`:**\n\t\n\t``sudo nano /src/main.rs``\n\n\t![f]()\n\t\n5. **Rebuild & run:**\n\t\n\t![f]()\n\n### Flag:\n**picoCTF{4r3_y0u_4_ru$t4c30n_n0w?}**\n"
+        }
+    ]
+}

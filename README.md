@@ -31,6 +31,12 @@
         <ul>
             <li><a href="./projects/pico-ctf/forensic/Disko1/picoCTF DISKO 1 Write Up.md">Disko 1 Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/forensic/Red/picoCTF RED Write Up.md">RED Write Up</a></li>
+        </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/forensic/Ph4nt0m 1ntrud3r/picoCTF Ph4nt0m 1ntrud3r Write Up.md">Ph4nt0m 1ntrud3r Write Up</a></li>
+        </ul>
     </details>
 
 <details>
@@ -49,6 +55,9 @@
         </ul>
         <ul>
             <li><a href="./projects/pico-ctf/general-skills/Fantasy-ctf/picoCTF Fantasy CTF Write Up.md"> Fantasy CTF Write Up</a></li>
+        </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/general-skills/Rust fixme 1/picoCTF Rust fixme 1 Write Up.md">Rust Fixme 1 Write Up</a></li>
         </ul>
     </details>
 

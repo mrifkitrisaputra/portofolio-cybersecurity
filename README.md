@@ -18,6 +18,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/cryptography/rsa_oracle/picoCTF rsa_oracle Write Up.md">Rsa-oracle Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/cryptography/13/picoCTF 13 Write Up.md">13 Write Up</a></li>
+        </ul>
     </details>
 
 <details>
@@ -65,6 +68,9 @@
         <summary>Reverse Engineering Write Up</summary>
         <ul>
             <li><a href="./projects/pico-ctf/reverse-engineering/packer/picoCTF Packer Write Up.md">Packer Write Up</a></li>
+        </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/reverse-engineering/Flag Hunters/picoCTF Flag Hunters Write Up.md">Flag Hunters Write Up</a></li>
         </ul>
     </details>
 

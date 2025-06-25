@@ -1,0 +1,26 @@
+{
+    "sourceFile": "projects/pico-ctf/reverse-engineering/transformation/picoCTF transformation Write Up.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750848823569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750848830077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: transformation (Easy)\n+##  CTF Name: transformation (Easy)\n \n ### Description:\n I wonder what this really is... [enc](https://mercury.picoctf.net/static/a757282979af14ab5ed74f0ed5e2ca95/enc)\n \n"
+                },
+                {
+                    "date": 1750848835337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: transformation (Easy)\n+##  CTF Name: transformation (Easy)\n \n ### Description:\n I wonder what this really is... [enc](https://mercury.picoctf.net/static/a757282979af14ab5ed74f0ed5e2ca95/enc)\n \n"
+                }
+            ],
+            "date": 1750848823569,
+            "name": "Commit-0",
+            "content": "##  CTF Name: transformation (Easy)\n\n### Description:\nI wonder what this really is... [enc](https://mercury.picoctf.net/static/a757282979af14ab5ed74f0ed5e2ca95/enc)\n  `''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])`\n\n### Hint:\nYou may find some decoders online\n\n### Analysis:\nInspecting the challenge description hints at a transformation applied via:\n``''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in ...\n``\nThis indicates that every pair of ASCII characters was combined into a single 16‑bit code, producing characters in the 0xXXXX range\n\n### Solution:\n1. **Download & cat file challenge**\n\n\t![f]()\n\n2. **Decode using magic tools [CyberChef](https://gchq.github.io/CyberChef/):**\n\n\t![f]()\n\n### Flag:\n**picoCTF{16_bits_inst34d_of_8_d52c6b93}**\n"
+        }
+    ]
+}

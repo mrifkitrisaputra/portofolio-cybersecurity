@@ -1,0 +1,26 @@
+{
+    "sourceFile": "projects/pico-ctf/cryptography/EVEN RSA CAN BE BROKEN/picoCTF EVEN RSA CAN BE BROKEN___ Write Up.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750850721945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750850728742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: EVEN RSA CAN BE BROKEN??? (Easy)\n+##  CTF Name: EVEN RSA CAN BE BROKEN??? (Easy)\n \n ### Description:\n This service provides you an encrypted flag. Can you decrypt it with just N & e?\n \n"
+                },
+                {
+                    "date": 1750850734988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿##  CTF Name: EVEN RSA CAN BE BROKEN??? (Easy)\n+##  CTF Name: EVEN RSA CAN BE BROKEN??? (Easy)\n \n ### Description:\n This service provides you an encrypted flag. Can you decrypt it with just N & e?\n \n"
+                }
+            ],
+            "date": 1750850721945,
+            "name": "Commit-0",
+            "content": "##  CTF Name: EVEN RSA CAN BE BROKEN??? (Easy)\n\n### Description:\nThis service provides you an encrypted flag. Can you decrypt it with just N & e?\n\n### Hint:\n1. How much do we trust randomness?\n2. Notice anything interesting about N?\n3. Try comparing N across multiple requests\n\n### Analysis:\nOrdinarily, RSA moduli `N = p * q` should be **odd**, since `p` and `q` are large odd primes. However, every `N` you receive is observed to be **even**, implying one of the primes is `2` or the primes are **reused across key generations.**  This strongly indicates a **non-coprime moduli vulnerability**—two moduli sharing a common prime factor. Compute their `gcd` to find that factor and then factor both moduli.\n\n### Solution:\n1. **Connect via netcat:**\n\n\t![f](./documentation/)\n\n2. **Calculate RSA using decode online like [RSA Cipher](https://www.dcode.fr/rsa-cipher):**\n\n\tinput the values we get from netcat into the fields for _C_, _e_, and _N_ and click **Calculate / Decrypt**\n\t\n\t![f]()\n\n### Flag:\n**picoCTF{tw0_1$_pr!m3f81fef0a}**\n"
+        }
+    ]
+}

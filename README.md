@@ -24,6 +24,9 @@
         <ul>
             <li><a href="./projects/pico-ctf/cryptography/interencdec/picoCTF interencdec Write Up.md">Interencdec Write Up</a></li>
         </ul>
+        <ul>
+            <li><a href="./projects/pico-ctf/cryptography/EVEN RSA CAN BE BROKEN/picoCTF EVEN RSA CAN BE BROKEN___ Write Up.md">EVEN RSA CAN BE BROKEN??? Write Up</a></li>
+        </ul>
     </details>
 
 <details>

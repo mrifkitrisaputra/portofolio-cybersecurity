@@ -20,8 +20,10 @@ Endpoint search-ajax memiliki celah **Reflected XSS** karena input dari paramete
     <br>
     -   Screenshot: wappalyzer
     <br>
-    ![f](./documetation/Screenshot%202025-11-15%20221133.png)
-    Terlihat bahwa website menggunakan Cloudflare CDN, yang kemungkinan besar berfungsi juga sebagai Web Application Firewall (WAF).
+    
+        ![f](./documetation/Screenshot%202025-11-15%20221133.png)
+    
+        Terlihat bahwa website menggunakan Cloudflare CDN, yang kemungkinan besar berfungsi juga sebagai Web Application Firewall (WAF).
 
 
 2.  **Uji Refleksi Input (Normal Input Test)**
@@ -31,7 +33,8 @@ Endpoint search-ajax memiliki celah **Reflected XSS** karena input dari paramete
     <br>
     -   Screenshot: view source "xss"
     <br>
-    ![f](./documetation/Screenshot%202025-11-15%20215651.png)
+    
+        ![f](./documetation/Screenshot%202025-11-15%20215651.png)
     
 3.  **Uji html injection**
    
@@ -40,16 +43,20 @@ Endpoint search-ajax memiliki celah **Reflected XSS** karena input dari paramete
     <br>
     -   Screenshot: view source ">xss
     <br>
-    ![f](./documetation/Screenshot%202025-11-15%20215301.png)
-    karakter HTML tetap diproses dan ditampilkan tanpa filter, menandakan adanya celah injeksi.yang dimana ini bisa ditingkatkan ke serangan xss
+    
+        ![f](./documetation/Screenshot%202025-11-15%20215301.png)
+    
+        karakter HTML tetap diproses dan ditampilkan tanpa filter, menandakan adanya celah injeksi.yang dimana ini bisa ditingkatkan ke serangan xss
     
 4.  **Uji Payload XSS Dasar**
     
     - Menggunakan payload dasar XSS untuk melihat apakah JavaScript dapat dieksekusi: `"><script>alert(1)</script>`
     <br>
     <br> 
-    ![f](./documetation/Screenshot%202025-11-15%20220718.png)
-    payload berhasil diblokir oleh WAF, yang mengindikasikan adanya filtering terhadap script injection.
+    
+        ![f](./documetation/Screenshot%202025-11-15%20220718.png)
+    
+        payload berhasil diblokir oleh WAF, yang mengindikasikan adanya filtering terhadap script injection.
     
 5.  **Menguji Bypass WAF Cloudflare**
     
@@ -57,7 +64,8 @@ Endpoint search-ajax memiliki celah **Reflected XSS** karena input dari paramete
 
     -   Screenshot: 
     <br>
-    ![f](./documetation/Screenshot%202025-11-15%20222539.png)
+    
+        ![f](./documetation/Screenshot%202025-11-15%20222539.png)
     
     - Menguji beberapa variasi payload untuk mengevaluasi efektivitas WAF:
 
@@ -76,17 +84,22 @@ Endpoint search-ajax memiliki celah **Reflected XSS** karena input dari paramete
     -   Dari beberapa payload bypass Cloudflare yang diuji, sebagian berhasil dieksekusi dan sebagian lainnya diblokir. Hal ini menunjukkan bahwa WAF menerapkan filtering berbasis pola (keyword-based filtering).
     -   Payload yang mengandung `document.cookie` selalu diblokir, sedangkan payload yang memanggil `document.domain` berhasil dijalankan.
     -   Screenshot: contoh payload yang diblokir
-    ![f](./documetation/Screenshot%202025-11-15%20223048.png)
+    
+        ![f](./documetation/Screenshot%202025-11-15%20223048.png)
+    
     -   Screenshot: contoh payload yang berhasil
     <br>
-    ![f](./documetation/Screenshot%202025-11-15%20223032.png)
+
+        ![f](./documetation/Screenshot%202025-11-15%20223032.png)
     
     - Untuk memastikan bahwa pemblokiran dilakukan berdasarkan keyword tertentu, payload dimodifikasi menjadi versi yang tidak mengandung document.cookie, yaitu: `<svg on onload=(alert)(cookie)>`
 
     -   Screenshot: payload yang berhasil
     <br>
-    ![f](./documetation/Screenshot%20(890).png)
-    Payload ini berhasil dieksekusi dan menampilkan nilai cookie tanpa terdeteksi oleh WAF.
+
+        ![f](./documetation/Screenshot%20(890).png)
+    
+        Payload ini berhasil dieksekusi dan menampilkan nilai cookie tanpa terdeteksi oleh WAF.
 
 ### **Impact** :
 Jika dimanfaatkan oleh penyerang, celah ini dapat digunakan untuk:

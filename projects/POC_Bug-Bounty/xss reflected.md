@@ -18,12 +18,14 @@ Endpoint search-ajax memiliki celah **Reflected XSS** karena input dari paramete
     -   Melakukan enumerasi teknologi menggunakan Wappalyzer.
     <br>
     <br>
+    
     -   Screenshot: wappalyzer
+    
     <br>
     
     ![f](./documetation/Screenshot%202025-11-15%20221133.png)
     
-        Terlihat bahwa website menggunakan Cloudflare CDN, yang kemungkinan besar berfungsi juga sebagai Web Application Firewall (WAF).
+    Terlihat bahwa website menggunakan Cloudflare CDN, yang kemungkinan besar berfungsi juga sebagai Web Application Firewall (WAF).
 
 
 2.  **Uji Refleksi Input (Normal Input Test)**

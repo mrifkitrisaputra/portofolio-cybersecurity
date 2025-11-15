@@ -1,0 +1,42 @@
+{
+    "sourceFile": "projects/POC_Bug-Bounty/xss reflected.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1763217718040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1763217741057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,11 @@\n+## **1. Privilege Escalation - Clear Chat**\r\n+\r\n+**Endpoint** : `/clear-chat`  \r\n+**Severity** : High\r\n+\r\n+### **Steps to Reproduce** :\r\n+\r\n 1.  **Victim Membuat Grup**\r\n     \r\n     -   Victim membuat grup baru dan mengundang attacker sebagai anggota.\r\n     <br>\r\n"
+                },
+                {
+                    "date": 1763217747691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-## **1. Privilege Escalation - Clear Chat**\r\n+## **Privilege Escalation - Clear Chat**\r\n \r\n **Endpoint** : `/clear-chat`  \r\n **Severity** : High\r\n \r\n"
+                },
+                {
+                    "date": 1763217759164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-## **Privilege Escalation - Clear Chat**\r\n+## **XSS REF - Clear Chat**\r\n \r\n **Endpoint** : `/clear-chat`  \r\n **Severity** : High\r\n \r\n"
+                },
+                {
+                    "date": 1763217764469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-## **XSS REF - Clear Chat**\r\n+## **XSS Reflectrf - Clear Chat**\r\n \r\n **Endpoint** : `/clear-chat`  \r\n **Severity** : High\r\n \r\n"
+                },
+                {
+                    "date": 1763217791217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-## **XSS Reflected in search**\r\n+## **XSS Reflected in search **\r\n \r\n **Endpoint** : `/clear-chat`  \r\n **Severity** : High\r\n \r\n"
+                },
+                {
+                    "date": 1763217842737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n ## **XSS Reflected In Search Bar**\r\n \r\n-\r\n **Endpoint** : `/clear-chat`  \r\n+**Endpoint** : `/clear-chat`  \r\n **Severity** : High\r\n \r\n ### **Steps to Reproduce** :\r\n \r\n"
+                }
+            ],
+            "date": 1763217718040,
+            "name": "Commit-0",
+            "content": "1.  **Victim Membuat Grup**\r\n    \r\n    -   Victim membuat grup baru dan mengundang attacker sebagai anggota.\r\n    <br>\r\n    <br>\r\n    -   Screenshot: Victim mengundang attacker ke grup\r\n    <br>\r\n    ![f](./documetation/images.png)\r\n    \r\n2.  **Intercept Request Clear Chat**\r\n   \r\n    -   Victim membuka grup, lalu lakukan clear chat.\r\n    -   Tangkap request menggunakan Burp Suite dan simpan di Repeater dengan nama **\"victim_clear_chat\"** .\r\n    <br>\r\n    <br>\r\n    -   Screenshot: Request clear chat dari victim di Burp Repeater.\r\n    <br>\r\n    ![f](./documetation/Screenshot%20(421).png)\r\n    \r\n3.  **Intercept Request Chat Attacker**\r\n    \r\n    \r\n    -   Attacker mengirim pesan ke grup victim,\r\n    <br> \r\n    ![f](./documetation/Screenshot%20(441).png)\r\n\r\n    lalu tangkap request di Burp Suite dan simpan di Repeater dengan nama **\"attacker_send_chat\"** .\r\n    \r\n5.  **Manipulasi Request**\r\n    \r\n    -   Copy header request **\"attacker_send_chat\"** dan tempel ke header request **\"victim_clear_chat\"** .\r\n    -   Kirim request yang telah dimodifikasi.\r\n    -   Screenshot: Request yang telah dimodifikasi di Burp Repeater.\r\n    <br>\r\n    ![f](./documetation/Screenshot%20(421).png)\r\n\r\n6.  **Verifikasi**\r\n    \r\n    -   Reload halaman grup victim: **Chat grup victim terhapus** meskipun attacker tidak memiliki izin.\r\n    -   Screenshot: Chat grup punya victim kosong setelah exploit.\r\n    <br>\r\n    ![f](./documetation/Screenshot%20(440).png)\r\n----------\r\n<br>\r\n<br>"
+        }
+    ]
+}
